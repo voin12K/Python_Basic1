@@ -1,12 +1,6 @@
-x = input("введіть ціле число: ")
+number = input("Введіть число: ")
 
-if x.isdigit():
-    x = int(x)
-    if x % 2 == 0:
-        res = "парне"
-    else:
-        res = "не парне"
-else:
-    res = "не валідне"
+is_integer = number.isdigit()
 
-print("Ваше число " + str(x) + " " + res)
+result = "парне" if is_integer and int(number) % 2 == 0 else "непарне" if is_integer else "не валідне"
+print(f"Ваше число {number} {result}.")
