@@ -17,7 +17,7 @@ class Auto:
 
 
 car1 = Auto("Toyota", 5, "Camry", color="blue", weight=1500)
-car1.move()  # Виводить "move"
+car1.move()
 print("Car age before birthday:", car1.age)
 car1.birthday()
 print("Car age after birthday:", car1.age)
